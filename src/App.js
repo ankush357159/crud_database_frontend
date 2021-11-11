@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Data from "./components/Data";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+import CreateData from "./components/CreateData";
+import DataCard from "./components/DataCard";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div>
+			<Home />
+		</div>
+
+		// <Router>
+		// 	<Home />
+		// 	<Data />
+		// 	<Routes>
+		// 		{/* <Route exact path='/newdata' component={CreateData} /> */}
+		// 	</Routes>
+		// 	<Data />
+		// </Router>
+	);
 }
 
 export default App;
